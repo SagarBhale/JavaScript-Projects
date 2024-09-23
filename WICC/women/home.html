@@ -1,0 +1,614 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Internal Communitty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="script.js"> -->
+</head>
+
+<!--see guidlines------------------------------------------------------------------------------------->
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="main.css">
+ <title>Welcome to complaint system</title>
+     
+   <script>
+     function myfun()
+     {
+       var guidebutton=document.getElementById("butn");
+       var guidelines=document.getElementById('guidelines');
+       if(guidebutton.value=="Click to see guidelines")
+       {
+       
+         guidelines.style.display='block';
+         guidebutton.value='Click to Hide guidelines';
+       }
+       else if(guidebutton.value=="Click to Hide guidelines")
+       {
+     
+         guidelines.style.display='none';
+         guidebutton.value='Click to see guidelines';
+       }
+     }
+   </script>
+ 
+ </head>
+<!----------------------------------------------------------------------------------------------->
+<style>
+
+
+*{
+        margin: 0;
+        padding: 0;
+        
+    }
+   
+    #feature
+       {
+        width: 100%;
+        height: 70%;
+        /* text-align: center; */
+        background:#c1d1f3;
+        display: flex;
+        flex-wrap: wrap;
+  
+       }
+       .imgg{
+        margin-left: 140px;
+        margin-top: 17PX;
+        display: 270%;
+        width: 27%;
+       }
+       #image{
+       width: 300px;
+       height: 300px;
+       }
+
+       .titletext{
+        width: 60%;
+       }
+    .titletext h1{
+        margin: auto;
+        font-size: 40px;
+        background:#c1d1f3;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        margin:  30px 0 0 25px;
+        color: black;
+        font-family: initial;
+    
+       }
+       .textslogan{
+        color: #3b4757;
+        font-size: 25px;
+        margin:  30px 0 0 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+       }
+
+       /* section2 */
+       #section2{
+         /* background-color: aliceblue; */
+         display: flex;
+         flex-wrap: wrap;
+         background:#c1d1f3;
+       }
+       .icons{
+        display: flex;
+        flex-wrap: wrap;
+        /* gap: 40px; */
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: 400px;
+    
+
+       }
+      .sc_icons_item{
+        /* box-shadow: 2px 2px 5px; */
+        padding: 10px;
+        align-items: center;
+    
+      }
+      .sc_icons_item_title{
+        margin-top: 10px;
+        font-size: 20px;
+        color: #773b89;
+    
+      }
+
+      /* section3 */
+      #testimonial
+      {
+        width: 100%;
+        padding: 70px 0;
+        text-align: center;
+        background-color: aliceblue;
+      }
+      .testinomialrow
+      {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      .testinomialcol
+      {
+        flex-basis: 28%;
+        padding: 10px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px 3px #009881;
+        transition: transform .5s;
+        cursor: pointer;
+      }
+      .user{
+           display: flex;
+           align-items: center;
+           margin: 20px 0;
+
+      }
+      .user img{
+        width: 300px;
+        margin: 20px;
+        border-radius: 8px;
+
+      }
+    .testinomialcol:hover
+    {
+        transform: translateY(10px);
+    }
+     h4{
+        font-size: 30px;
+        color: #773b89;
+        text-shadow: 1px 1px 2px black;
+    }
+    .list 
+    {
+        /* margin: 6px; */
+       text-align: left;
+        font-size: 17px;
+         font-weight: 400;
+          font-family: initial;
+    }
+    li
+    {
+       text-align: left;   
+        font-family: initial;
+    }
+
+/* footer */
+
+.footer{
+            background-color: #24262b;
+            padding: 100px 0;
+        }
+    .container
+    {
+        max-width: 1170px;
+        margin: auto;
+    }
+    .row
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    ul{
+        list-style: none;
+    }
+   .footer-col
+   {
+    width: 25%;
+    padding: 0 15px;
+   }
+    .footer-col h4
+    {
+    font-size: 18px;
+    color: #ffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+   } 
+   .footer-col h4::before
+    {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child)
+    {
+        margin-bottom: 10px;
+    }
+    .footer-col p
+    {
+        font-size: 13px;
+        text-transform: capitalize;
+        color: #ffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a
+    {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover
+    {
+        color: #ffff;
+        padding-left: 10px;
+    }
+   
+
+    @media (max-width: 767px) {
+        .footer-col
+        {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width: 574px) {
+        .footer-col{
+            width: 100%;
+        }
+    }
+
+    /* header */
+ nav{
+  background:white;
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background:#0877df;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+
+a{
+  text-decoration: none;
+}
+nav ul li:hover a{
+  color: #0877df;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px#0877df,
+                inset 0 0 10px #0877df;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+}
+
+
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><img src="https://sdbc.ac.in/wp-content/uploads/2022/06/Logo-SDBC-250x62.png"
+                        alt="bansal logo" width="250" height="75"></li>
+                <li class="items"><a href="#">Home</a></li>
+                <li class="items"><a href="registration.html">Register Complaint</a></li>
+                <li class="items"><a href="login.html">User Login</a></li>
+                <li class="items"><a href="adminf.html">Admin</a></li>
+                <li class="items"><a href="aboutUs.html">About</a></li>
+                
+               
+
+                <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <!-- <div class="img"> -->
+        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMglkwPM5m8X-FDwCoob5Ac-XCudAuDds7sgi0rNws1v9Ru2lyulA9JaqDoxgL0MAkxyU&usqp=CAU" alt="" style="width: 100%;height: 500px;"> -->
+        <!-- </div> -->
+
+        <script>
+            $(document).ready(function () {
+                $('.btn').click(function () {
+                    $('.items').toggleClass("show");
+                    $('ul li').toggleClass("hide");
+                });
+            });
+        </script>
+
+    </header>
+    <!-- main -->
+    <main>
+        <section id="feature">
+
+            <div class="titletext">
+                <h1 style="color: rgb(167, 6, 6);">WOMEN</h1>
+                <p>
+                <h1 style="margin-bottom:20px;">INTERNAL COMPLAINT COMMITTEE</h1>
+                </p>
+                <div class="textslogan">
+                    <p> Strong Women Standup For Herself And Also Standup For Everyone</p>
+                </div>
+            </div>
+
+            <div class="imgg">
+                <img id="image" src="http://www.shebox.nic.in/assets/site/main/images/banner-right.png"
+                    alt="banner-right">
+            </div>
+
+            </div>
+        </section>
+
+
+        <section class="section2">
+
+
+
+               <div>
+                <div class="welcome container">
+                    <p>
+                        <h1 style="color: rgb(167, 6, 6);"margin-bottom:9px;">WELCOME TO WOMEN INTERNAL COMPLAINT COMMITTEE</h1>
+                    </p>
+                
+                
+                <div class="guide">
+                  
+                    <input type="button" class="btn btn-light form-control" onClick="myfun()" id="butn" value="Click to see guidelines" ">
+                
+                  <div id="guidelines" style="display:none">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item list-group-item-dark">
+                        If you want to place complaint first of all register yourself in <a href="registration.html">User registration</a>
+                      </li>
+                      <li class="list-group-item list-group-item-dark">
+                        After registration Login in to <a href="login.html">User Login</a>
+                      </li>
+                      <li class="list-group-item list-group-item-dark">
+                        Then set your personal information. And in complaint section select type and sub type of complaint.
+                      </li>
+                      <li class="list-group-item list-group-item-dark">
+                        After writing your complaint submit your complaint and wait for response on it. 
+                      </li>
+                      <li class="list-group-item list-group-item-dark">
+                        You can see your complaint status on your dashboard.
+                      </li>
+                      <li class="list-group-item list-group-item-dark">
+                        If you want to logout there is Logout button at Top-right corner.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+                <br /><hr />
+            
+                </div>		
+               </div>
+
+        </section>
+
+
+        <section id="testimonial">
+            <div class="titletext">
+                <h1 style="text-align: center;"></h1>
+            </div>
+            <br><br>
+            <div class="testinomialrow">
+                <div class="testinomialcol">
+                    <div class="user">
+                        <img id="image1"   src="http://www.brecw.ac.in/images/services/wpc.jpg">
+                        <div class="userinfo">
+                        </div>
+                    </div>
+                    <h4>Power</h4><br>
+                    <p  style=" text-align: left; ">The woman protection cell can punishthe guilty in the following ways :
+                      <ul class="list">
+                        <li>*  Verbal Warning</li>
+                        <li>* Written Warning</li>
+                        <li>* Complaint to their parents</li>
+                        <li>* Fine(Financial Punishments)</li>
+                      </ul>
+                      </p>
+                </div>
+                    
+                <div class="testinomialcol">
+                    <div class="user">
+                        <img id="image2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsJf39OJwj5NQ1S56IFFS64FfICCQdhT1vyez3539y5L7wbL8phDDFigby5-0Kof0lAG0&usqp=CAU">
+                        <div class="userinfo">
+                        </div>
+                    </div>
+                    <h4>Purpose</h4><br>
+                    <ul class="list">
+                       <li> * To help them raise their voice against all  sorts of discrimination and harassment.</li>
+                        <li>* To make them aware of their rights.</li>
+                        <li>* To help them change their mindset and   develop decision making abilities.</li>
+                        <li>* To make them self Dependent</li>
+                       </ul>
+                </div>
+        </section>
+        <section>
+            <div>
+            </div>
+            <h4>Women protection cell</h4><br>
+                    <ul class="list">
+                        <li> * To enhance understanding of issues  related to women and to make the college campus a safe place them.</li>
+                        <li> * It helps women to gain control  over their own lives </li>
+                        <li> * Women's empowerment and  gender equality</li>
+                    </ul>
+        </div>
+                
+            </div>
+      </section>
+
+    
+         
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Quick links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Get help</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>About us</h4>
+                        <p>To develop a policy against sexual harassment of women at the Institute. To ensure the
+                            implementation of the policy in letter and spirit through proper reporting of the complaints
+                            and their follow-up procedures.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get In Touch</h4>
+                        <p><b>SUSHILA DEVI BANSAL COLLEGE INDORE
+                                AB Road, Umariya, Near Rau, Indore, Madhya Pradesh 453331</b></p><br>
+                        <p id="email">E-mail : counselling@sdbc.ac.in</p>
+                        <p id="callUs">Call us: 9827303633, 7987196922</p>
+                    </div>
+                </div>
+
+                <footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>

@@ -1,0 +1,356 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                font-family: initial;
+                box-sizing: border-box;
+            } 
+            #aboutus
+            {
+                display: flex;
+                flex-wrap: wrap; 
+            }
+            .section
+            {
+                width: 100%;
+                left: 0%;
+            }
+            .section .contanier
+            {
+                width: 80%;
+                display: block;
+                margin: 0px auto;
+                padding: 50px 0px;
+                /* justify-content: center; */
+                /* align-items: center; */
+            }
+            .contanier .title{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            .contanier .title h1{
+                text-transform: uppercase;
+                font-size: 35px;
+                color: #88941e;
+            }
+            .contanier .title h1::after
+            {
+                content: "";
+                height: 5px;
+                width: 100px;
+                background-color: #c4d156;
+                border-radius: 2px;
+                display: block;
+                margin: auto;
+            }
+            .content{
+                /* width: 100%; */
+                /* margin-right: 200px; */
+                border: 2 px solid black; 
+            }
+            .imagesection
+            {
+                float: right;
+                width: 40%;
+             }
+             .imagesection img
+            {
+                width: 50%;
+                height: auto;
+            }
+            .content .article h2{
+                color: #88941e;
+            }
+            .content .article p
+            {
+                margin-top: 8px;
+                color: #a3a3a3;
+                font-size: 16px;
+                line-height: 1.5;
+                color: #333;
+                font-weight: 700;
+                text-align: left;
+            }
+            .content .article  .button
+            {
+                margin-top: 50px;
+            }
+            .content .article  .button a
+            {
+                text-decoration: none;
+                padding: 8px 25px;
+                background-color: #88941e;
+                border-radius: 40px;
+                color: #fff;
+                font-size: 18px;
+                letter-spacing: 1.5px;
+            }
+            .content .article  .button a:hover
+            {
+                color: #fff;
+                background-color: #f28f92;
+                transition: 1s ease;
+            } 
+            @media screen and (max-width:768px) {
+                .section .contanier
+                {
+                    width: 80%;
+                    display: block;
+                    margin: auto;
+                }
+                .content {
+                    float: none;
+                    width: 100%;
+                    display: block;
+                    margin: auto;
+                }
+                .imagesection
+                {
+                    float: none;
+                    width: 100%;
+                    margin-top: 50px;
+                }
+                .imagesection img {
+                        width: 50%;
+                        height: auto;
+                        display: block;
+                        margin: auto;
+                }
+                .contanier .title h1 {
+                    text-align: center;
+                    font-size: 30px;
+                }
+                .contanier .title .button 
+                {
+                    text-align: center;
+                }
+                .contanier .title .article a
+                {
+                    padding: 6px 15px;
+                    font-size: 16px;
+                }
+            }
+
+
+
+
+
+
+            <style>
+		.forumm #span{
+			display:inline-block;
+			width:30%;
+		}
+		.forumm input{
+			display:inline-block;
+			width:65%;
+		}
+		body{
+			background-image:url("comp.jpg");
+			    background-repeat: no-repeat;
+				background-width:100%;
+				background-height:100%;
+				background-size: cover;				
+		}
+		.container{
+		background:white;
+		margin-top:10px;
+		border:1px solid black;
+		border-radius:10px;
+	}
+	.container p{
+		
+	}
+	.container h3{
+		border-bottom:2px solid #c0c0c0;
+		text-align:center;
+		padding-bottom:7px;
+	}
+
+
+    nav{
+  background:white;
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background:#0877df;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: #555b62;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px#0877df,
+                inset 0 0 10px #0877df;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+}
+
+
+
+
+	</style>
+        </style>
+    
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo"><img src="https://sdbc.ac.in/wp-content/uploads/2022/06/Logo-SDBC-250x62.png"
+                            alt="bansal logo" width="250" height="75"></li>
+                    <li class="items"><a href="home.html">Home</a></li>
+                    <li class="items"><a href="registration.html">Register Complaint</a></li>
+                    <li class="items"><a href="login.html">User Login</a></li>
+                    <li class="items"><a href="adminf.html">Admin</a></li>
+                    <li class="items"><a href="aboutUs.html">About</a></li>
+                    <li class="items"><a href="#">Contact</a></li>
+                    <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav>
+            <!-- <div class="img"> -->
+            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMglkwPM5m8X-FDwCoob5Ac-XCudAuDds7sgi0rNws1v9Ru2lyulA9JaqDoxgL0MAkxyU&usqp=CAU" alt="" style="width: 100%;height: 500px;"> -->
+            <!-- </div> -->
+    
+            <script>
+                $(document).ready(function () {
+                    $('.btn').click(function () {
+                        $('.items').toggleClass("show");
+                        $('ul li').toggleClass("hide");
+                    });
+                });
+            </script>
+    
+        </header>
+        <div id="aboutus">
+      <div class="section">
+        <div class="contanier">
+            <div class="title">
+                <h1>About us</h1>
+            </div>
+            <div class="content">
+                <div class="imagesection">
+                    <img src="https://www.pngitem.com/pimgs/m/514-5149286_profile-logo-hd-png-download.png" alt="">
+                </div>
+            <div class="article">
+                <h2>Faculty Cordinator</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit labore et deleniti voluptates iste, ea, quis ullam enim facilis voluptatem odit consectetur mollitia animi quos quidem necessitatibus iure! Esse, labore?</p>
+                <div class="button">
+                    <a href="">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+      </div>
+      <div class="section">
+        <div class="contanier">
+            <div class="content">
+            <div class="article">
+                <div class="imagesection">
+                    <img src="https://www.pngitem.com/pimgs/m/514-5149286_profile-logo-hd-png-download.png" alt="">
+                </div>
+                <h2>Student Co-ordinator</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit labore et deleniti voluptates iste, ea, quis ullam enim facilis voluptatem odit consectetur mollitia animi quos quidem necessitatibus iure! Esse, labore?</p>
+                <div class="button">
+                    <a href="">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+      </div>  
+      <div class="section">
+        <div class="contanier">
+            <div class="content">
+            <div class="article">
+                <div class="imagesection">
+                    <img src="https://www.pngitem.com/pimgs/m/514-5149286_profile-logo-hd-png-download.png" alt="">
+                </div>
+                <h2>Student Co-ordinator</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit labore et deleniti voluptates iste, ea, quis ullam enim facilis voluptatem odit consectetur mollitia animi quos quidem necessitatibus iure! Esse, labore?</p>
+                <div class="button">
+                    <a href="">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+      </div>  
+      </div>
+    </body>
+    </html>

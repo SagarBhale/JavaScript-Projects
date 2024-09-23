@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* header 1 */
+.header1{
+    width: 100%;
+    height: 12%;
+    background-color:white;
+}
+.header1>.ul-list{
+    width: 100%;
+    height: 3%;
+    display: inline-block;
+    display: flex;
+    justify-content:right;
+    color:black
+}
+#ourZone-logo{
+   
+    object-fit: cover;
+    width: 150px;
+    height: 50px;
+    padding-top: 10px;
+    margin-right:450px;
+}
+
+#search-content{
+    margin-top: 14px;
+    width: 300px;
+    height: 35px;
+    border-radius:10px solid rgb(255, 255, 255);
+}
+.ul-list>li{
+    font-size: large;
+    margin-top: 5px;
+}
+/* Header 2 */
+.header2{
+    width: 100%;
+    border-top: 3px solid rgb(255, 246, 246) ;
+}
+.header2>.navbar>ul{
+    width: 100%;
+    height: 5%;
+    background-color:rgb(12, 10, 42);
+    display: inline-block;
+    display: flex;
+    justify-content:space-between;
+}
+.navbar{
+
+}
+ul>li{
+    list-style: none;
+    padding:15px;
+    font-size: px;
+}
+ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.main-page>.main-page-banner-img>img{
+    height: 250px;
+    width: 1280px;
+
+
+}
+
+/* 
+width: 100%;
+/* height: 15vh;    */
+/* height: 100px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;    
+cursor: pointer;  */
+/* transition: cub */
+
