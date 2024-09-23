@@ -1,0 +1,13 @@
+const{log}=require('console');
+const os=require('os');
+// console.log(os);
+// console.log(os.platform());
+// console.log("dir ---",os.homedir());
+// console.log("dir ---",os.arch());
+// console.log("dir ---",os.release());
+// console.log("dir ---",os.cpus());
+// console.log(os.totalmem());
+// console.log(os.totalmem()/1024/1024/1024);
+// console.log(os.freemem()/1024/1024/1024);
+// console.log(os.hostname());
+console.log(os.uptime()/3600/24);

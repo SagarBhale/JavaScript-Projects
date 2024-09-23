@@ -1,0 +1,46 @@
+.second-con{
+    background-color: aquamarine;
+    display: block;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    bottom: 20%;
+    height: 350px;
+    width: 200px;
+    margin: 40px;
+    padding: 10px;
+    border: 2px solid black;
+    color: white;
+}
+.second-con>img{
+    height: 200px;
+    object-fit: contain;
+    
+    margin-left: 50px;
+}
+#smartBoy{
+    color: black;
+    margin:0;
+    padding-left: 30px;
+    display: inline-block;
+}
+#stranger{
+    color:rgb(208, 88, 88);
+    margin:0;
+    padding-left: 70px ;
+    display: inline-block;
+}
+#buttons{
+    display: flex;
+}
+.second-con>#buttons{
+    padding: 10px;
+    margin-top: 15px;
+
+}
+#rmv,#add{
+    padding: 8px;
+    margin-left: 6px;
+}
+
