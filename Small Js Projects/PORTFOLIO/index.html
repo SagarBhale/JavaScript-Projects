@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+  <div id="header">
+    <div id="container">
+      <nav>
+        <!-- <img src="/logo.jpg" alt="logo" class="logo"> -->
+        <ul id="side-menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact</a></li>
+          <i class="fa-solid fa-square-xmark cross" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>           
+    </div>
+    <div id="hero">
+      <div id="left">
+        <div class="icons">
+          <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook-f fb"></i></a>         
+          <a href="https://www.linkedin.com/in/sakshi-gupta-15914821a"><i class="fa-brands fa-linkedin-in linked"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram insta"></i></a>          
+          <a href="https://web.whatsapp.com/"> <i class="fa-brands fa-whatsapp what"></i></a>
+          <a href="https://twitter.com"><i class="fa-brands fa-twitter twit"></i></a>         
+        </div>  
+        <div class="leftcontent">
+          <h1>Wellcome to my portfolio Website</h1>          
+          <h2>Hii! I am <span>Sagar Bhale</span></h2>
+          <h3><i>Software Engineer</i></h3>          
+        </div>
+      </div>
+      <div id="right">
+        <div class="design">
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>    
+    </div>    
+  </div>   
+
+  <!--- ------------------about ----------------------- -->
+  
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">                 
+          <img src="WhatsApp Image 2024-01-17 at 1.32.28 PM.jpeg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <p>I am self motivated and enthusiastic fresher software engineer looking for an opportunity to put my knowledge into use and enhance
+            my skills. Excellent problem-solving skills . Ability to learn new software and technologies quickly. Capability to work in teams by
+            providing valuable support. Hardworking and passionate job seeker with strong organizational skills eager to secure entry-level SDE
+            position</p>
+
+            <div class="tab-title">
+             <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+             <p class="tab-link" onclick="opentab('certificates')">Certificates</p>
+             <p class="tab-link" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br>HTML,CSS,JavaScript</li>
+                <li><span>Backend language</span><br>Java, MSQL</li>
+                <li><span>Other</span><br>DBMS,OOP's</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="certificates">
+              <ul>
+                <li><span>Front-End Developer</span><br>SSi Digital Indore • 2023</li>
+                <li><span>Java Developer</span><br>SSi Digital Indore • 2023</li>
+                <li><span>Alpha (DSA with Java)</span><br>Apna College</li>
+              </ul>              
+            </div>
+            <div class="tab-content" id="education">
+              <ul>
+                <li><span>Bachelor of Technology in Computer Science and Engineering</span><br>Jawaharlal Institute of Technology • Borawan</li>
+                <li><span>Higher Secondary(10+2)</span><br>Swami Vivekanand Public High Secondary School • Khargone</li>
+                <li><span>High Second(10)</span><br>Swami Vivekanand Public High Secondary School • Khargone</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- --------------------------services--------------------- -->
+
+  <div id="services">
+    <div id="container">
+      <h1 class="sub-title">My Servives</h1>
+
+      <div class="services-list">
+        <div class="services-content">
+          <input type="checkbox" id="ch">
+          <i class="fa-brands fa-java"></i>
+          <h2><span>Java</span></h2>          
+          <p>I have good understanding of oops, collection and multithreding in java and I can solve </p>
+          <div class="readmore">
+            <p> programs in java. I also developed a mini project called ATM machine by using their core concept of oops.</p>
+            <label for="ch">Show less</label>
+          </div>
+          <label for="ch">Read more</label>                
+        </div>   
+
+        <div class="services-content">
+          <input type="checkbox" id="ch1">
+          <i class="fa-brands fa-html5"></i>
+          <h2><span>HTML CSS JavaScript</span></h2>
+          <p>I have good knowledge in front-end languages and i developed some projects </p>
+          <div class="readmore1">
+            <p>usig these like - Amazone-clone, Text-to-speech coverter etc </p>
+            <label for="ch1">Show less</label>
+          </div>
+          <label for="ch1">Read more</label>                    
+        </div>
+
+        <div class="services-content">
+          <input type="checkbox" id="ch2">
+          <i class="fa-solid fa-code"></i>
+          <h2><span>Data structure & algoritum</span></h2>
+          <p>I have good understanding of data structure and algorithum and i have solved</p>
+          <div class="readmore2">
+            <p>300+ coding problems on different platforms like- codechef,hackrank and leetcode </p> 
+            <label for="ch2">Show less</label>
+          </div>
+          <label for="ch2">Read more</label>                       
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------------------------porjects------------------------------ -->
+
+  <div id="project">
+    <div class="container">
+      <h1 class="sub-title-1">My work</h1>
+
+      <div class="work-list">
+
+        <div class="work">
+          <img src="Screenshot 2024-01-18 204320.png" alt="">  
+          <!-- <a href="https://github.com/sakshigupta0809/Amazon-clone"><img src="/Screenshot 2024-01-18 204320.png" alt=""></a>         -->
+          <div class="layer">
+            <h3>Amazone-clone</h3>
+            <p> A web- based mockup inspired by amazon's design, built primarily for education purpose. This project showcases HTML and CSS skills. </p>
+            <!-- <a href="https://github.com/sakshigupta0809/Amazon-clone"></a> -->
+          </div>
+        </div>
+        <div class="work">
+          <img src="Screenshot 2024-01-19 153602.png" alt="">
+          
+          <div class="layer">           
+            <h3>Portfolio</h3>
+            <p>portfolio is a unique way to showcase my work and let others know about me. This project is developed by using the HTML, CSS, JavaScrip.            </p>
+            <!-- <a href="#"></a>           -->
+          </div>
+        </div>
+        <div class="work">
+          <img src="shreyin .png" alt="">
+          
+          <div class="layer">
+            <h3>Cynthia Ugwu-clone</h3>
+            <p> A web- based mockup inspired by cynthia ugwu design, built primarily for education purpose. This project showcases HTML and CSS skills.</p>
+            <!-- <a href="#"></a>           -->
+          </div>
+        </div>
+        <div class="work">         
+          <img src="text-to-speech.png" alt="">          
+          <div class="layer">
+            <h3>Text to speach converter</h3>
+            <p> It is a web page that transforms written text into spoken words. I have used the Web Speech API andHTML, CSS, JavaScript.</p>
+            <!-- <a href="https://github.com/sakshigupta0809/Text_to_Speach_Converter"> </a>                     -->
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- ---------------------------contact---------------------------------- -->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title-2">Contect Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>gsakshi0809@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 9770629144</p>
+        <div class="social-midea">
+          <a href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a>
+          <a href="https://github.com/sakshigupta0809?tab=repositories"><i class="fa-brands fa-github"></i></i></a>
+          <a href="https://www.linkedin.com/in/sakshi-gupta-15914821a"><i class="fa-brands fa-linkedin-in linked"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram insta"></i></a>          
+        </div>
+        <a href="/Software Engineer.pdf" download class="btn btn2 ">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form action="">
+          <input type="text" name="Name" placeholder="your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message"  cols="30" rows="10" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Sakshi. Made with <i class="fa-solid fa-heart"></i> Sakshi Gupta  </p>
+  </div>
+</div>
+
+  
+<!-- ----------------------------------script----------------------------------------- -->
+
+ <script src="/script.js"></script>
+</body>
+</html>

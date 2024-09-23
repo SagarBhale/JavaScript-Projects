@@ -1,0 +1,139 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x:hidden;
+    height: 100%;
+}
+.topheader{
+
+    background: color #ee52ee;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 10px;
+}
+
+#sidebarMenu{
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    margin-top: 60px;
+    background: #2e862e;
+}
+.navbar{
+    padding: 5px;
+    border: 1px solid #eaeaea;
+    background-color: white;
+    border-bottom: 2px solid #eaeaea;
+    display: flex;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;   
+}
+.menu li{
+    color: #fff;
+    border-bottom: 1px solid rgb(238, 56, 86);
+}
+.munu li a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.menu-icon{
+    display: inline-block;
+}
+.menu-icon #menu-img{
+    margin: 0px 5px 0px 0px;
+    font-size: x-small;
+    width: 35px;
+    height: 35px;
+}
+.c21-logo #c21-img{
+    height: 35px;
+    margin: 0px 5px 0px 0px;
+    font-size: x-small;
+}
+.bnr{
+    display: flex;
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.bnr>.bnr1>img{
+    width:370px;
+    padding: 10px;
+    margin: 5px;
+}
+.bnr>.bnr2>img{
+    width:370px;
+    padding: 10px;
+    margin: 5px;
+}
+.bnr>.bnr3>img{
+    width:370px;
+    padding: 10px;
+    margin: 5px;
+}
+h1,b{
+    font-size: 2.9rem;
+    text-wrap: nowrap;
+    color: rgb(238, 56, 86);
+    font-weight:bold;
+    margin: 0;
+    padding: 0%;
+    
+}
+
+.main-div >.main-div1{
+    display: flex;
+    margin-left: 5px;
+    padding-left: 10px;
+    position: relative;
+}
+.main-div>.main-div1>.text-main-div1{
+    position:absolute;
+    top:35%;
+    left:60%;
+
+}
+
+.main-div >.main-div1>#img-shop-till-you-drop{
+    padding-left: 10px;
+    margin-left: 5px;
+    background-color: black;
+}
+
+.button-main-div1>#button{
+    display: block;
+    margin: auto;
+    border: 1px;
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+    color: rgb(238, 56, 86);
+    border: 1px solid black;
+    margin-top: 80px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+}
+.button-main-div1>#button:hover{
+    box-shadow:rgb(238, 56, 86) 0px 19px 38px,rgb(238, 56, 86) 0px 15px 12px;
+    transition: 1.5s;
+}
+.footer-1{
+    text-align: center;
+    background-color: #f4f4f4;
+    padding-top: 10px;
+}
+.footer-last{
+    text-align: center;
+}
+
+
